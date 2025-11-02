@@ -53,14 +53,8 @@ function firstHalf(arr) {
     // Include middle index on odd length arr
     // Your code here
     let firstHalfArray = [];
-    if (arr.length % 2 === 0) {
-        for (let i = 0; i < arr.length / 2; i++) {
-            firstHalfArray.push(arr[i]);
-        }
-    } else {
-        for (let i = 0; i < arr.length / 2 + 1; i++) {
-            firstHalfArray.push(arr[i]);
-        }
+    for (let i = 0; i < arr.length / 2; i++) {
+        firstHalfArray.push(arr[i]);
     }
     return firstHalfArray;
 }
@@ -75,7 +69,7 @@ function secondHalf(arr) {
             secondHalfArray.push(arr[i]);
         }
     } else {
-        for (let i = arr.length - 1; i > arr.length / 2 - 1; i--) {
+        for (let i = arr.length - 1; i > arr.length / 2; i--) {
             secondHalfArray.push(arr[i]);
         }
     }
